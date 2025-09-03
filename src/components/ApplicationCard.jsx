@@ -13,11 +13,11 @@ const ApplicationCard = ({ application }) => {
           <i className={`bi ${cornerIcon}`}></i>
         </div>
         <div className="card-body text-center d-flex flex-column">
-          <div className="app-icon mb-3">
+          <div className="app-icon mb-4">
             <i className={`bi ${icon}`}></i>
           </div>
-          <h5 className="card-title fw-bold text-dark mb-2">{title}</h5>
-          <p className="card-text text-muted flex-grow-1">{description}</p>
+          <h5 className="card-title fw-bold text-dark mb-3">{title}</h5>
+          <p className="card-text text-muted flex-grow-1 mb-4">{description}</p>
           <button className="btn btn-primary btn-lg rounded-pill px-4 mt-auto">
             Acceder
             <i className="bi bi-arrow-right ms-2"></i>

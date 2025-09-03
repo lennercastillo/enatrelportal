@@ -1,27 +1,25 @@
-/* App Card Styles - Premium Corporate Design */
+/* App Card Styles - Clean Professional Design */
 .app-card {
-  background: rgba(255, 255, 255, 0.98);
-  border-radius: 20px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(226, 232, 240, 0.6);
+  border: 1px solid #e2e8f0;
   height: 100%;
   box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.06),
-    0 4px 12px rgba(0, 0, 0, 0.04);
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
   transform: translateY(0px);
-  backdrop-filter: blur(20px);
   animation: floatCard 4s ease-in-out infinite;
 }
 
 .app-card:hover {
-  transform: translateY(-18px) scale(1.03);
+  transform: translateY(-8px) scale(1.02);
   box-shadow: 
-    0 32px 64px rgba(30, 64, 175, 0.15),
-    0 16px 32px rgba(0, 0, 0, 0.08) !important;
-  border-color: #3b82f6;
-  background: rgba(255, 255, 255, 1);
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
   animation-play-state: paused;
 }
 
@@ -49,6 +47,11 @@
   font-size: 1.2rem;
 }
 
+.app-card:hover .app-icon {
+  transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
 .app-card:hover .corner-icon {
   opacity: 1;
   transform: scale(1.2) translateY(-3px);
@@ -66,37 +69,76 @@
 }
 
 .app-icon {
-  font-size: 2.5rem;
-  display: block;
-  color: #1e40af;
-  margin-bottom: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  font-size: 2rem;
+  color: white;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
 }
 
 .app-icon i {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-/* Custom Bootstrap Button Styles - Premium */
+/* Iconos con colores específicos para cada aplicación */
+.app-card:nth-child(1) .app-icon {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.app-card:nth-child(2) .app-icon {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.app-card:nth-child(3) .app-icon {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+}
+
+.app-card:nth-child(4) .app-icon {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+}
+
+.app-card:nth-child(5) .app-icon {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+}
+
+.app-card:nth-child(6) .app-icon {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+}
+
+/* Custom Bootstrap Button Styles - Clean */
 .app-card .btn-primary {
-  background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+  background: #3b82f6;
   border: none;
-  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.25);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 0.01em;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .app-card .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(5, 150, 105, 0.35);
-  background: linear-gradient(135deg, #047857 0%, #059669 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+  background: #2563eb;
 }
 
 .app-card .btn-primary:focus {
-  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.4);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 /* Custom Bootstrap Overrides */
@@ -110,21 +152,22 @@
 }
 
 .app-card .card-title {
-  color: #0f172a;
+  color: #1e293b;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: -0.01em;
-  line-height: 1.3;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
 }
 
 .app-card .card-text {
-  color: #475569;
+  color: #64748b;
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0.005em;
+  letter-spacing: 0.01em;
 }
 
 /* Responsive Design */
@@ -140,11 +183,13 @@
   }
   
   .app-icon {
-    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
   }
   
   .app-icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   .corner-icon {

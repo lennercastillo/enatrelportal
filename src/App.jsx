@@ -60,7 +60,7 @@ function App() {
       id: 8,
       title: "Seguridad Interna",
       description: "Sistema de Seguridad Interna",
-      icon: "bi-shield-check-fill",
+      icon: "bi-shield-fill-check",
       cornerIcon: "bi-lock-fill"
     },
     {

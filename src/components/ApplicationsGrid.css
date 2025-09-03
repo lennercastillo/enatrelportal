@@ -1,0 +1,33 @@
+/* Applications Grid Styles */
+.applications-grid {
+  padding: 2rem 0;
+}
+
+.applications-grid .row {
+  margin-bottom: 2rem;
+}
+
+.applications-grid .row:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive margins */
+@media (max-width: 768px) {
+  .applications-grid {
+    padding: 1.5rem 0;
+  }
+  
+  .applications-grid .row {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .applications-grid {
+    padding: 1rem 0;
+  }
+  
+  .applications-grid .row {
+    margin-bottom: 1rem;
+  }
+}

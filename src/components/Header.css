@@ -1,8 +1,8 @@
 /* Header Styles - Premium Corporate Design */
 .portal-header {
-  background: #9297a5;
+  background: #6c93ff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,7 +13,7 @@
 }
 
 .portal-header .logo {
-  height: 120px;
+  height: 180px;
   width: auto;
   transition: all 0.4s ease;
   animation: float 3s ease-in-out infinite;
@@ -88,11 +88,11 @@
   }
   
   .portal-header {
-    padding: 1.25rem 0;
+    padding: 0.4rem 0;
   }
   
   .portal-header .logo {
-    height: 100px;
+    height: 140px;
   }
 }
 
@@ -107,10 +107,10 @@
   }
   
   .portal-header .logo {
-    height: 80px;
+    height: 120px;
   }
   
   .portal-header {
-    padding: 1rem 0;
+    padding: 0.3rem 0;
   }
 }
