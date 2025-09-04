@@ -13,6 +13,7 @@ function App() {
       description: "Sistema Intranet - Recursos Humanos",
       icon: "bi-people-fill",
       cornerIcon: "bi-building"
+      
     },
     {
       id: 2,
@@ -40,7 +41,8 @@ function App() {
       title: "Página Web Enatrel",
       description: "Página Web de Enatrel",
       icon: "bi-globe2",
-      cornerIcon: "bi-link-45deg"
+      cornerIcon: "bi-link-45deg",
+      url: "https://www.enatrel.gob.ni/"
     },
     {
       id: 6,

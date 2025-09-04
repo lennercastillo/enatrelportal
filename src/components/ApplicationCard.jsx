@@ -6,23 +6,31 @@ const ApplicationCard = ({ application }) => {
   return (
     <div className="col-lg-4 col-md-6 col-sm-12">
       <div 
-        className="app-card card h-100 border-0 shadow-lg"
-        style={{ animationDelay: `${id * 0.2}s` }}
+        className="modern-card"
+        style={{ animationDelay: `${id * 0.15}s` }}
       >
-        <div className="corner-icon">
-          <i className={`bi ${cornerIcon}`}></i>
-        </div>
-        <div className="card-body text-center d-flex flex-column">
-          <div className="app-icon mb-4">
+        <div className="card-header">
+          <div className="card-icon">
             <i className={`bi ${icon}`}></i>
           </div>
-          <h5 className="card-title fw-bold text-dark mb-3">{title}</h5>
-          <p className="card-text text-muted flex-grow-1 mb-4">{description}</p>
-          <button className="btn btn-primary btn-lg rounded-pill px-4 mt-auto">
-            Acceder
-            <i className="bi bi-arrow-right ms-2"></i>
-          </button>
+          <div className="card-badge">
+            <i className={`bi ${cornerIcon}`}></i>
+          </div>
         </div>
+        
+        <div className="card-content">
+          <h3 className="card-title">{title}</h3>
+          <p className="card-description">{description}</p>
+        </div>
+        
+        <div className="card-footer">
+          <a href={application.url || "#"} className="access-btn" target="_blank" rel="noopener noreferrer">
+            <span>Acceder</span>
+            <i className="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        
+        <div className="card-glow"></div>
       </div>
     </div>
   )

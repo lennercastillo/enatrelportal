@@ -4,29 +4,41 @@ import './Header.css'
 const Header = () => {
   return (
     <header className="portal-header">
-      <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-md-3 text-center text-md-start">
+      <div className="header-container">
+        <div className="header-content">
+          <div className="logo-section">
             <img src={enatrelLogo} alt="ENATREL Logo" className="logo" />
-          </div>
-          <div className="col-md-6 text-center">
-            <h1 className="display-4 fw-bold text-white mb-0">Portal Sistemas</h1>
-          </div>
-          <div className="col-md-3 text-center text-md-end">
-            <div className="d-flex flex-column flex-md-row gap-2 justify-content-center justify-content-md-end align-items-center">
-              <button className="btn btn-outline-light btn-sm rounded-pill px-3">
-                <i className="bi bi-exclamation-triangle me-2"></i>
-                Reportar Incidencia
-              </button>
-              <button className="btn btn-outline-light btn-sm rounded-pill px-3">
-                <i className="bi bi-key me-2"></i>
-                Recuperar Contraseña
-              </button>
-              <div className="badge bg-light text-dark fs-6 px-3 py-2 rounded-pill">
-                <i className="bi bi-people me-1"></i>
-                55,238
-              </div>
+            <div className="logo-text">
+              <h1 className="portal-title">Portal Sistemas</h1>
+              <p className="portal-subtitle">Sistemas de Información Corporativa</p>
             </div>
+          </div>
+          
+          <div className="header-actions">
+            <div className="action-buttons">
+              <button className="action-btn primary-btn">
+                <i className="bi bi-exclamation-triangle"></i>
+                <span>Reportar Incidencia</span>
+              </button>
+              <button className="action-btn secondary-btn">
+                <i className="bi bi-key"></i>
+                <span>Recuperar Contraseña</span>
+              </button>
+            </div>
+            
+            <div className="views-counter">
+              <i className="bi bi-eye-fill"></i>
+              <span className="views-number">55,238</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="header-decoration">
+          <div className="decoration-line"></div>
+          <div className="decoration-dots">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>

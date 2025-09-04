@@ -1,10 +1,31 @@
-/* Applications Grid Styles */
+/* Applications Grid Styles - Modern Layout */
 .applications-grid {
-  padding: 2rem 0;
+  padding: 3rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.applications-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .applications-grid .row {
-  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
 }
 
 .applications-grid .row:last-child {
@@ -14,7 +35,8 @@
 /* Responsive margins */
 @media (max-width: 768px) {
   .applications-grid {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
   }
   
   .applications-grid .row {
@@ -24,10 +46,16 @@
 
 @media (max-width: 576px) {
   .applications-grid {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
   }
   
   .applications-grid .row {
     margin-bottom: 1rem;
   }
+
+  .applications-grid .row .col-lg-4 {
+    margin-bottom: 1rem;
+    width: 100%;
+  } 
 }
