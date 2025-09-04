@@ -1,61 +1,37 @@
-/* Applications Grid Styles - Modern Layout */
-.applications-grid {
+/* Simple Applications Grid */
+.container-fluid {
   padding: 3rem 0;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  border-radius: 32px;
-  position: relative;
-  overflow: hidden;
 }
 
-.applications-grid::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.03) 0%, transparent 50%);
-  pointer-events: none;
+.row {
+  justify-content: center;
 }
 
-.applications-grid .row {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 0;
+/* Centrar las cards cuando hay menos de 3 */
+.row .col-lg-4:only-child {
+  display: flex;
+  justify-content: center;
 }
 
-.applications-grid .row:last-child {
-  margin-bottom: 0;
+.row .col-lg-4:nth-last-child(-n+2):first-child {
+  display: flex;
+  justify-content: center;
 }
 
-/* Responsive margins */
+.row .col-lg-4:nth-last-child(-n+2):last-child {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .applications-grid {
+  .container-fluid {
     padding: 2rem 0;
-    margin-top: 1.5rem;
-  }
-  
-  .applications-grid .row {
-    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .applications-grid {
+  .container-fluid {
     padding: 1.5rem 0;
-    margin-top: 1rem;
   }
-  
-  .applications-grid .row {
-    margin-bottom: 1rem;
-  }
-
-  .applications-grid .row .col-lg-4 {
-    margin-bottom: 1rem;
-    width: 100%;
-  } 
 }
