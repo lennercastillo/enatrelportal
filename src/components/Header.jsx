@@ -1,4 +1,4 @@
-import enatrelLogo from '../logo/Sin-Título-1.png'
+import enatrelLogo from '../logo/Sin-título-1.png'
 import './Header.css'
 
 const Header = () => {
