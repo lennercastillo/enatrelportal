@@ -1,12 +1,22 @@
+import { useNavigate, useLocation } from 'react-router-dom'
 import enatrelLogo from '../logo/Sin-título-1.png'
 import './Header.css'
 
 const Header = () => {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleLogoClick = () => {
+    navigate('/')
+  }
+
+  const isHomePage = location.pathname === '/'
+
   return (
     <header className="portal-header">
       <div className="header-container">
         <div className="header-content">
-          <div className="logo-section">
+          <div className="logo-section" onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
             <img src={enatrelLogo} alt="ENATREL Logo" className="logo" />
             <div className="logo-text">
               <h1 className="portal-title">Portal Sistemas</h1>
@@ -16,6 +26,12 @@ const Header = () => {
           
           <div className="header-actions">
             <div className="action-buttons">
+              {!isHomePage && (
+                <button className="action-btn home-btn" onClick={handleLogoClick}>
+                  <i className="bi bi-house"></i>
+                  <span>Inicio</span>
+                </button>
+              )}
               <button className="action-btn primary-btn">
                 <i className="bi bi-exclamation-triangle"></i>
                 <span>Reportar Incidencia</span>
