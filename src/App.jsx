@@ -12,10 +12,12 @@ function App() {
     <Router>
       <div className="portal">
         <Header />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/aplicaciones" element={<ApplicationsPage />} />
-        </Routes>
+        <main className="portal-main">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/aplicaciones" element={<ApplicationsPage />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

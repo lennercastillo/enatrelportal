@@ -1,23 +1,23 @@
-/* Simple Application Cards - Clean Design */
+/* Application Cards */
 .simple-card {
   background: white;
   border-radius: 16px;
   padding: 2rem;
-  height: 300px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
 .simple-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  border-color: #3b82f6;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #667eea;
 }
 
 /* Card Icon */
@@ -25,7 +25,7 @@
   width: 60px;
   height: 60px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,17 +33,13 @@
   color: white;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
 }
 
 .simple-card:hover .card-icon {
   transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
 }
 
 /* Card Info */
@@ -53,19 +49,17 @@
 }
 
 .card-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
   font-size: 1.25rem;
-  color: #1f2937;
+  font-weight: 700;
+  color: #1a1a1a;
   margin: 0 0 0.75rem 0;
   line-height: 1.3;
 }
 
 .card-description {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
   font-size: 0.95rem;
-  color: #6b7280;
+  font-weight: 400;
+  color: #64748b;
   line-height: 1.5;
   margin: 0;
 }
@@ -81,12 +75,11 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: #3b82f6;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  border-radius: 10px;
+  font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   border: none;
@@ -94,9 +87,8 @@
 }
 
 .card-button:hover {
-  background: #2563eb;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
 .card-button i {
@@ -105,7 +97,7 @@
 
 /* Color variations for different cards */
 .simple-card:nth-child(1) .card-icon {
-  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .simple-card:nth-child(2) .card-icon {
@@ -148,10 +140,10 @@
   background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .simple-card {
-    height: 280px;
+    height: 260px;
     padding: 1.5rem;
   }
   
@@ -172,7 +164,7 @@
 
 @media (max-width: 576px) {
   .simple-card {
-    height: 260px;
+    height: 240px;
     padding: 1.25rem;
   }
   
